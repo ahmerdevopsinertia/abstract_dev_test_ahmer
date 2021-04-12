@@ -7,6 +7,7 @@ NodeJS, Express JS and MongoDB's package mongoose
 
 # Directory and Files info
 
+```
 index.js => The entry point which handles the express app server, database, host and port setup 
 app.js => Handles the express setup
 router.js => Handles the API requests
@@ -33,4 +34,6 @@ We can use the any lint library to configure the linter which helps in maintaini
 # We can use mocha or sinon like libraries to write the Unit Tests of each layer that is endpoint, service and model
 
 # For this Test database is host at Atlas MongoDB server
+
 mongodb+srv://sehat_guide:3Gt8mCZ8FhfnWgME@cluster0-c73fg.mongodb.net/abstract_dev_test?retryWrites=true&w=majority
+```
