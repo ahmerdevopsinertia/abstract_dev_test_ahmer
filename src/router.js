@@ -1,17 +1,23 @@
 const express = require('express');
 const {
   getAllTabs,
-} = require('../src/service');
+  addTab,
+  updateTab,
+  deleteTab,
+} = require('../src/endpoint');
 
 const router = express.Router();
 
-// const { protect } = require('../src/middleware/authorization');
+// TODO Use the protect authorization 
+// middleware to authorize the API endpoints
+// using any available protocol such as JWT, OAuth or Custom build
 
+// const { protect } = require('../src/middleware/authorization');
 // router.use(protect);
 
 router.get('/', getAllTabs);
-// router.post('/login', login);
-// router.post('/plogin', plogin);
-// router.post('/votp', votp);
+router.post('/', addTab);
+router.put('/:tabId', updateTab);
+router.delete('/:tabId', deleteTab);
 
 module.exports = router;
