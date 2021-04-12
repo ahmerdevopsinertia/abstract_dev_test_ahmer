@@ -1,3 +1,4 @@
+
 const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
@@ -6,13 +7,6 @@ const xss = require('xss-clean');
 const rateLimit = require('express-rate-limit');
 const cors = require('cors');
 // const errorHandler = require('./src/middleware/error');
-// const connectDB = require('./src/config/db');
-
-// Load env vars
-// dotenv.config({ path: './src/config/config.env' });
-
-// Connect to database
-// connectDB();
 
 // Route files
 const tabs = require('../src/router');
